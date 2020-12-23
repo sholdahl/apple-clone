@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    background: grey;
+    align-items: stretch;
+    margin:20px 20% 0 20%;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background: linear-gradient(#808080, #707070 50%, #5e5e5e 51%, #666), 
+                linear-gradient(rgba(0, 0, 0, .2),rgba(0, 0, 0, 0), 5%,rgba(0, 0, 0, 0), 97%, rgba(0, 0, 0, .45)),
+                linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0,0,0,0) 0.2%, rgba(0,0,0,0) 99.8%, rgba(0, 0, 0, .2));
+}
+
+.nav-item{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    border: solid 1px #6a6a6a;
+    color: white;
+}
+
+.nav-item h4{
+    margin: 12px 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.navbar :first-child.nav-item{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.navbar :last-child.nav-item{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1.4;
+}
+
+.logo{
+    background: url('images/apple-48.png') 50% 50% no-repeat;
+    background-size: 20px 20px;
+}
+
+#search{
+    background: rgba(255,255,255,.1) url('images/magnifying-glass.png') 5% 60% no-repeat;
+    background-size: 12px 12px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+    padding-left: 20px;
+    padding-top: 4px;
+    margin: 0 10px;
+    width: 100%;
+}
+
+#search:active, #search:focus{
+    border: none;
+    outline: none;
+    background: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.content{
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 0;
+}
+
+.main-hero{
+    height: 645px;
+    width: 1440px;
+    background: url('images/your_verse_hero.jpg');
+    background-size: cover;
+    background-position: 50% 100%;
+    box-sizing: border-box;
+    padding: 120px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-weight: 100;
+    font-size: 60px;
+}
+
+.hero-content-wrapper{
+    max-width: 800px;
+    margin: auto;
+}
+
+.featured-blocks{
+    height: 200px;
+    width: 25%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.block-1{
+    background: url('images/promo_iphone5s.jpg');
+}
+
+.block-2{
+    background: url('images/promo_iphone5c.jpg');
+}
+
+.block-3{
+    background: url('images/promo_30_years.jpg');
+}
+
+.block-4{
+    background: url('images/promo_supplier_responsibility.jpg');
+}
